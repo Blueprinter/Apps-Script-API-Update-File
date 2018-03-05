@@ -41,7 +41,7 @@ From the Apps Script code editor:
 
 FILE CONTENT STRUCTURE
 
-The file content is not associated with any key, like an inner file ID.  So you can't retrieve file content directly by file name.
+The file content is not directly associated with any key, like an inner file ID.  So you can't retrieve file content directly by file name.  Of course, you can know what content is associated with that file name, but the code must first find the object with that file name.
 Each file content object is an element in an array of files.  The array maintains the original file order, but you can't access elements in an array by anything but the index number, or loop through the entire array, check each inner object for the file name.
 
     [

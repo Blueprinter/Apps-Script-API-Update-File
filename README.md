@@ -29,4 +29,12 @@ The structure of the JSON object data is critical to understand.
 
 You must turn on a button in the developer console to allow the Apps Script file to change your Apps Script files.
 
-You must enable the Apps Script API.
+You must enable the Google Apps Script API in the Google Cloud platform developer console. 
+
+From the Apps Script code editor:
+
+* "Resources" menu
+* Cloud Platform project
+* View API console
+* Enable APIs and Services
+* Search for: Google Apps Script

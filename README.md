@@ -38,3 +38,37 @@ From the Apps Script code editor:
 * View API console
 * Enable APIs and Services
 * Search for: Google Apps Script
+
+FILE CONTENT STRUCTURE
+
+The file content is not associated with any key, like an inner file ID.  So you can't retrieve file content directly by file name.
+Each file content object is an element in an array of files.  The array maintains the original file order, but you can't access elements in an array by anything but the index number, or loop through the entire array, check each inner object for the file name.
+
+    [
+      {"name":"appsscript",
+       "type":"JSON",
+       "source":"{\n  \"timeZone\": \"America/New_York\",\n  \"dependencies\": {\n  },\n  \"exceptionLogging\": \"STACKDRIVER\"\n}",
+       "lastModifyUser":{
+           "email":"example@gmail.com",
+           "name":"First Last",
+           "photoUrl":"https://lh5.googleusercontent.com/123/h128/photo.jpg"
+       },
+       "createTime":"2018-03-04T19:37:26.798Z",
+       "updateTime":"2018-03-04T19:37:26.798Z",
+       "functionSet":{}
+      },
+  
+      {"name":"Code",
+       "type":"SERVER_JS",
+       "source":"function myFunction() {\n  \n}\n",
+       "lastModifyUser":{
+               "email":"example@gmail.com",
+               "name":"First Last",
+               "photoUrl":"https://lh5.googleusercontent.com/123/h128/photo.jpg"
+       },
+       "createTime":"2018-03-04T19:49:08.868Z",
+       "updateTime":"2018-03-04T19:49:08.871Z",
+       "functionSet":{
+          "values":[{"name":"myFunction"}]}
+       }
+    ]

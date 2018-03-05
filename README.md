@@ -72,3 +72,13 @@ Each file content object is an element in an array of files.  The array maintain
           "values":[{"name":"myFunction"}]}
        }
     ]
+
+Make sure to view the response coming back from the UrlFetchApp.fetch(url) call that gets the source data the first time you run the code. If you didn't turn on the Google Apps Script API, you will get an error that looks like this:
+
+    "error": {
+      "code": 403,
+      "message": "Google Apps Script API has not been used in project project-id-123 before or it is disabled. Enable it by visiting       https://console.developers.google.com/apis/api/script.googleapis.com/overview?project=project-id-123 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.",
+      "status": "PERMISSION_DENIED",
+      
+      
+Use the URL given to go directly to the page that is needed to turn on the Google Apps Script API

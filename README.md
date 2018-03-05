@@ -1,5 +1,9 @@
 # Apps-Script-API-Update-File
-Overwrite one Apps Script file with another Apps Script file
+* Create a new Apps Script file
+* Get the file ID of the new Apps Script file
+* Get the files content of the new Apps Script file
+* Modify the files content with new content
+* Overwrite the new (existing) Apps Script file with the new content - Including adding a new inner file
 
 This is Apps Script code.  You must use the Apps Script code editor: https://script.google.com
 

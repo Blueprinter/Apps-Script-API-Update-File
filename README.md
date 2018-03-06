@@ -21,6 +21,10 @@ You must edit your manifest file.  In the code editor, choose "View" - "Show man
       "exceptionLogging": "STACKDRIVER"
     }
 
+One important thing to know, is that the mainifest file is always overwritten, and the manifest file, which is JSON type and named appsscript.json MUST be in the source data to update the target file.
+
+The "update" method of the Apps Script API can and does always replace the manifest file.  So, you can do things like change the library version to another version in this way.
+
 The main function is in the file GS_Main.  Start there.
 
 The main function controls the program flow for the entire process.
